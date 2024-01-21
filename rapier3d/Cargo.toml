@@ -33,7 +33,14 @@ bincode = "1"
 crossbeam-channel = "0.5"
 palette = "0.6"
 
+[dependencies.web-sys]
+version = "0.3.64"
+features = [
+  'console',
+]
+
 [package.metadata.wasm-pack.profile.release]
 # add -g to keep debug symbols
-wasm-opt = ['-O4', '--dce']
-#wasm-opt = ['-g']
+wasm-opt = ['-O4', '--dce', '-g']
+#wasm-opt = false
+# wasm-opt = ['-g']

@@ -164,6 +164,7 @@ dependencies = [
  "ref-cast",
  "serde",
  "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]
